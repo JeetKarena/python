@@ -1,4 +1,11 @@
 import calendar as ca;
 
-print("the month of march is ",ca.month(2003,3))
-print("the 2003 is a leap year ? Ans :  ",ca.isleap(2003))
+month=int(input("Enter month : "))
+year=int(input("Enter Year : "))
+# printing a calendar in python using a calendor module
+print(f"{month} of {year} is ",ca.month(year,month))
+
+# cheaking wheather a given year is leap year or not
+
+year=int(input("Enter year you want to cheack for leap year : "))
+print(f"{year} is a leap year ? Ans :  ",ca.isleap(year))
